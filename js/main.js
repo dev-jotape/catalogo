@@ -1,3 +1,10 @@
+var app = new Vue({ 
+	el: '#app',
+	data: {
+			message: 'Hello Vue!',
+			arr: ['teste1', 'teste2', 'teste3']
+	}
+});
 /*price range*/
 
  $('#sl2').slider();

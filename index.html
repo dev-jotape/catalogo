@@ -7,7 +7,8 @@
     <meta name="author" content="">
     <title>Home | E-Shopper</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
+	<!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/price-range.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
@@ -21,10 +22,12 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head><!--/head-->
 
 <body>
+	<div id="app">
 	<header id="header"><!--header-->
 		<div class="header_top"><!--header_top-->
 			<div class="container">
@@ -67,12 +70,12 @@
 		<div class="header-middle" style=""><!--header-bottom-->
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-md-2">
+					<div class="col-12 col-md-4">
 						<div class="logo pull-left">
-							<a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+							<a href="index.html"><img src="images/home/logo.png" alt="" style="width: 70%;" /></a>
 						</div>
 					</div>
-					<div class="col-9 col-md-7" style="margin-top:1.5%">
+					<div class="col-9 col-md-7" style="margin-top: 4.5%;">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 								<span class="sr-only">Toggle navigation</span>
@@ -104,20 +107,15 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-sm-3" style="margin-top:1%">
-						<div class="search_box pull-right">
-							<input type="text" placeholder="Search"/>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div><!--/header-bottom-->
 	</header><!--/header-->
 	<br><br>
 	<section id="slider"><!--slider-->
-		<div class="container">
+		<div class="container" style="width: 100%">
 			<div class="row">
-				<div class="col-sm-12">
+				<div class="col-sm-12" style="padding: 0;">
 					<div id="slider-carousel" class="carousel slide" data-ride="carousel">
 						<ol class="carousel-indicators">
 							<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
@@ -126,14 +124,12 @@
 						</ol>
 						
 						<div class="carousel-inner">
+							<!-- <div class="item active" style="padding: 0">
+								<img src="images/banner/anuncio1.PNG" alt="" style="max-height: 450px">
+							</div>-->
 							<div class="item active" style="padding: 0">
-								<img src="https://agenciamoustache.com.br/wp-content/uploads/2013/04/05-Full-Banner-Site-Moustache2-845x321.jpg" alt="">
-							</div>
-							<?php for($i = 0; $i < 2; $i++) { ?>
-								<div class="item" style="padding: 0">
-									<img src="https://agenciamoustache.com.br/wp-content/uploads/2013/04/05-Full-Banner-Site-Moustache2-845x321.jpg" alt="">
-								</div>
-							<?php } ?>							
+								<img src="images/banner/anuncio2.PNG" alt="" style="max-height: 450px">
+							</div> 
 						</div>
 						
 						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
@@ -148,64 +144,38 @@
 			</div>
 		</div>
 	</section><!--/slider-->
-	
+
 	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-3">
-					<div class="left-sidebar">
-						<h2>Category</h2>
-						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4 class="panel-title">
-										<a data-toggle="collapse" data-parent="#accordian" href="#sportswear">
-											<span class="badge pull-right"><i class="fa fa-plus"></i></span>
-											Sportswear
-										</a>
-									</h4>
-								</div>
-								<div id="sportswear" class="panel-collapse collapse">
-									<div class="panel-body">
-										<ul>
-											<li><a href="#">Nike </a></li>
-											<li><a href="#">Under Armour </a></li>
-											<li><a href="#">Adidas </a></li>
-											<li><a href="#">Puma</a></li>
-											<li><a href="#">ASICS </a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div><!--/category-products-->
-					</div>
-				</div>
-				
-				<div class="col-sm-9 padding-right">
-					<div class="features_items"><!--features_items-->
-						<h2 class="title text-center">Destaques</h2>
-						<div class="col-sm-4">
-							<div class="product-image-wrapper">
-								<div class="single-products">
-										<div class="productinfo text-center">
-											<img src="images/home/product1.jpg" alt="" />
-											<!-- <h2>$56</h2> --><br><br>
-											<p>Easy Polo Black Edition</p>
-											<!-- <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a> -->
-										</div>
-										<div class="product-overlay">
-											<div class="overlay-content">
-												<!-- <h2>$56</h2> -->
-												<!-- <p>Easy Polo Black Edition</p> -->
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-eye"></i>Visualizar Produto</a>
-											</div>
-										</div>
-								</div>
-							</div>
-						</div>
-					</div><!--features_items-->
+		<div style="width:100%; background: #FFAC40">
+			<div style="width:90%; max-width:700px; margin:0 auto; color:#FFFFFF; font-size:15px; line-height:24px;">
+				<div class="tituloPesquisa" align="center">O que você procura?</div>
+				<div style="padding-bottom: 70px"> 
+					<form role="search" id="searchform" action="./busca/" method="get" class="radius-xl">
+						<div class="input-group row" style="width: 100%; display: flex">
+							<input type="text" class="form-control inputRound" placeholder="Pesquisar...">
+							<i class="fa fa-search iconSearch" ></i>
+						</div><!-- /input-group -->
+					</form>
 				</div>
 			</div>
+		</div>
+	</section>
+	<section id="one" class="wrapper style1 special">
+		<div style="width:100%; background: grey">
+				<div style="width:90%; max-width:700px; margin:0 auto; color:#FFFFFF; font-size:15px; line-height:24px;">
+						<div class="tituloPesquisa" align="center">Procurar por Categorias</div>
+						<div class="row" style="display: flex; padding-bottom: 80px; text-align: center">
+							<div class="col-md-4 col-sm-6 col-xs-6 wow fadeIn animated divIcon">
+									<i class="fas fa-handshake icon big rounded color1"></i>Prestação de serviço
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-6 wow fadeIn animated divIcon">
+								<i class="fas fa-cog icon big rounded color1"></i>Serralheria
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-6 wow fadeIn animated divIcon">
+								<i class="fa fa-wrench icon big rounded color1"></i>Construção Civil
+							</div>
+						</div>
+					</div>
 		</div>
 	</section>
 	
@@ -215,7 +185,7 @@
 				<div class="row">
 					<div class="col-sm-2">
 						<div class="companyinfo">
-							<h2><span>e</span>-shopper</h2>
+							<h2>Usinagem Saraiva</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
 						</div>
 					</div>
@@ -366,14 +336,15 @@
 		</div>
 		
 	</footer><!--/Footer-->
+</div>
 	
 
   
+    <script src="js/main.js"></script>
     <script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.scrollUp.min.js"></script>
 	<script src="js/price-range.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
 </body>
 </html>
