@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Home | E-Shopper</title>
+    <title>Home | Usinagem Saraiva</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -43,11 +43,11 @@
 					<div class="col-sm-6">
 						<div class="social-icons pull-right">
 							<ul class="nav navbar-nav">
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+								<li><a href="#"><i class="fab fa-google-plus"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -87,23 +87,31 @@
 						<div class="mainmenu pull-left">
 							<ul class="nav navbar-nav collapse navbar-collapse">
 								<li><a href="index.html" class="active">Home</a></li>
-								<li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
+								<li class="dropdown">
+									<a href="shop.html">Produtos
+										<i class="fa fa-angle-down"></i>
+									</a>
                                     <ul role="menu" class="sub-menu">
-                                        <li><a href="shop.html">Products</a></li>
+										<li><a href="shop.html">Serralheria</a></li>
+										<li><a href="shop.html" >Construção Civil</a></li>
+                                        <!-- <li><a href="shop.html">Products</a></li>
 										<li><a href="product-details.html">Product Details</a></li> 
 										<li><a href="checkout.html">Checkout</a></li> 
 										<li><a href="cart.html">Cart</a></li> 
-										<li><a href="login.html">Login</a></li> 
+										<li><a href="login.html">Login</a></li>  -->
                                     </ul>
                                 </li> 
-								<li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
+								<li class="dropdown">
+									<a href="quem-somos.html">Quem somos
+										<!-- <i class="fa fa-angle-down"></i> -->
+									</a>
+                                    <!-- <ul role="menu" class="sub-menu">
                                         <li><a href="blog.html">Blog List</a></li>
 										<li><a href="blog-single.html">Blog Single</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li> 
-								<li><a href="404.html">404</a></li>
-								<li><a href="contact-us.html">Contact</a></li>
+								<!-- <li><a href="404.html">404</a></li> -->
+								<li><a href="contact-us.html">Fale Conosco</a></li>
 							</ul>
 						</div>
 					</div>
@@ -166,13 +174,22 @@
 						<div class="tituloPesquisa" align="center">Procurar por Categorias</div>
 						<div class="row" style="display: flex; padding-bottom: 80px; text-align: center">
 							<div class="col-md-4 col-sm-6 col-xs-6 wow fadeIn animated divIcon">
-									<i class="fas fa-handshake icon big rounded color1"></i>Prestação de serviço
+								<a href="shop.html" class="linksIndex">
+									<i class="fas fa-handshake icon big rounded color1"></i>
+									<label class="lblProcurarCategoria">Prestação de serviço</label>
+								</a>
 							</div>
 							<div class="col-md-4 col-sm-6 col-xs-6 wow fadeIn animated divIcon">
-								<i class="fas fa-cog icon big rounded color1"></i>Serralheria
+								<a href="shop.html" class="linksIndex">
+									<i class="fas fa-cog icon big rounded color1"></i>
+									<label class="lblProcurarCategoria">Serralheria</label>
+								</a>
 							</div>
 							<div class="col-md-4 col-sm-6 col-xs-6 wow fadeIn animated divIcon">
-								<i class="fa fa-wrench icon big rounded color1"></i>Construção Civil
+								<a href="shop.html" class="linksIndex">
+									<i class="fa fa-wrench icon big rounded color1"></i>
+									<label class="lblProcurarCategoria">Construção Civil</label>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -340,11 +357,11 @@
 	
 
   
-    <script src="js/main.js"></script>
-    <script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/jquery.js"></script>
 	<script src="js/price-range.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
