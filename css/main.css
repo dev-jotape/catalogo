@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background:;
+  /* background: ; */
   position: relative;
   font-weight:400px;
 }
@@ -891,7 +891,7 @@ h2.title {
 }
 
 .product-overlay {
-  background:#FE980F;
+  background:rgb(254, 152, 15, 0.5);
   top: 0;
   display: none;
   height: 0;
@@ -2528,7 +2528,7 @@ h2.title {
   line-height: 60px;
   margin-bottom: 20px;
   color: #FFFFFF;
-  font-family: 'Sancoale',Sans-Serif;
+  font-family: abel;
 }
 
 .inputRound {
@@ -2594,3 +2594,43 @@ h2.title {
 .linksIndex {
   color: white  
 }
+
+.imgBanner {
+  filter: blur(2px);
+  height: 400px!important
+}
+
+.imgProduct {
+  height: 290px;
+}
+
+.whitoutTopMargin {
+  margin-top: 0
+}
+
+.titleBanner {
+  margin-top: 25%;
+  font-size: 3em!important;
+  color: white!important;
+  font-family: abel!important;
+  font-weight: bold!important;
+  width: 100%
+}
+
+.divBanner {
+  padding: 0; text-align: center
+}
+
+.circulo{
+  border-radius:50%;
+  border:3px solid #2F535E;
+  z-index:5;
+  background:#2F535E;
+  position:absolute;
+
+  top: -10%;
+  height: 120%;
+  width: 39%;
+  opacity: 0.7;
+  margin-left: 2%;
+  }
